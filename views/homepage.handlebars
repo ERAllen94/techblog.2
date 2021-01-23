@@ -1,0 +1,7 @@
+<h2>Home</h2>
+<hr>
+{{#each posts as |post|}}
+    <a class='post' href='/post/{{post.id}}'>
+        {{> post-info post}}
+    </a>
+{{/each}}
